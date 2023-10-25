@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* layer base preset */
+/* following when compiled will be inserted at the end of base styles */
+@layer base {
+  /* @font-face {
+    font-family: Oswald;
+    src: url(@/assets/fonts/Oswald/Oswald-Bold.ttf) format("​truetype​");
+  } */
+
+  body {
+    @apply z-0 bg-bgBody;
+  }
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+}
+.error {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@layer components {
+  .primary_button {
+    @apply bg-gradient-to-r from-primary  to-gradient text-white p-3 rounded-3xl px-8;
+  }
+  .line-hover {
+    @apply relative after:content-[''] after:absolute after:z-10 after:left-0 after:bottom-0 after:h-[0.5px] after:w-0 hover:after:w-full after:bg-secondory after:transition-all after:ease-in-out after:duration-500;
+  }
+}
+@layer utilities {
+  .form-panel {
+    @apply md:mt-0 md:col-span-2 bg-white shadow sm:rounded-md px-4 py-5 sm:p-6;
+  }
+  .form-simple {
+    @apply mt-1 focus:ring-primary focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md;
+  }
+  .form-underline {
+    @apply m-0 block w-full px-2 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-blue-300;
+  }
+  .form-gray {
+    @apply mt-1 block w-full rounded-md bg-gray-200  border-transparent focus:border-gray-500 focus:bg-white;
+  }
+  .form-dropdown {
+    @apply mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-indigo-500 sm:text-sm;
+  }
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+
+  padding: 2px;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f26c4f;
+  transform-origin: bottom right;
+  transition: transform 0.50s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.button {
+  background: #3D4C53;
+  width : 200px;
+  height : 50px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 3px;
+}
+.btnTwo {
+  position : relative;
+  width : 200px;
+  height : 100px;
+  margin-top: -75px;
+  padding-top: 2px;
+  background : #f26c4f;
+  left : -250px;
+  transition : .3s;
+}
+.btnText {
+  color : white;
+  transition : .3s;
+  margin-top: 12px;
+}
+.btnText2 {
+  margin-top : 50px;
+  margin-right : -130px;
+  color : #FFF;
+}
+.button:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+  left: -130px;
+}
+.button:hover .btnText{ /*When hovering over .button change .btnText*/
+  margin-left : 65px;
+}
+.button:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}
+
+.bg-cut{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 83%, 66% 83%, 53% 100%, 56% 82%, 0 82%);
+  
+}
+.contact-path{
+  clip-path: polygon(100% 0%, 64% 0%, 34% 0%, 19% 0%, 0% 0%, 0% 51%, 0% 86%, 16% 85%, 9% 100%, 30% 86%, 100% 86%, 100% 65%, 100% 46%, 100% 25%);
+}
+
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100px;
+  max-width: 280px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.inp .label {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.inp .focus-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  height: 100%;
+  background: white;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.inp input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 16px 12px 0 12px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0 -1px 0 white;
+  color: #FFF;
+  transition: all 0.15s ease;
+}
+.inp input:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+.inp input:not(:-moz-placeholder-shown) + .label {
+  color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.inp input:not(:-ms-input-placeholder) + .label {
+  color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.inp input:not(:placeholder-shown) + .label {
+  /* color: rgba(0, 0, 0, 0.5); */
+  transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.inp input:focus {
+  background: rgba(0, 0, 0, 0.05);
+  outline: none;
+  box-shadow: inset 0 -2px 0 #f26c4f;
+}
+.inp input:focus + .label {
+  color: #f26c4f;
+  transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.inp input:focus + .label + .focus-bg {
+  transform: scaleX(1);
+  transition: all 0.1s ease;
+}

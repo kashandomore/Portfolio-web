@@ -1,0 +1,45 @@
+{
+  "name": "next-ts-tailwind-starter",
+  "version": "0.1.0",
+  "private": "true",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.11.3",
+    "aos": "^2.3.4",
+    "classnames": "^2.3.2",
+    "daisyui": "^2.50.0",
+    "framer-motion": "5.1",
+    "i": "^0.3.7",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-slick": "^0.29.0",
+    "react-whatsapp-widget": "^2.1.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.2",
+    "@types/aos": "^3.0.4",
+    "@types/node": "17.0.19",
+    "@types/react": "17.0.39",
+    "@types/react-slick": "^0.23.10",
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.1.0",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.23",
+    "tailwindcss-debug-screens": "^2.2.1",
+    "typescript": "4.5.5"
+  }
+}
