@@ -7,11 +7,11 @@ const Banner: React.FC = () => {
     <>
       <section id="banner">
         <div
-          className='bg-[url("/img/banner.jpg")] w-full h-screen  md:block hidden lg:bg-center bg-right bg-cover'
+          className='bg-[url(/img/banner.jpg)] w-full h-screen  md:block hidden lg:bg-center bg-right bg-cover'
           id="banner"
         >
           <div className="flex justify-between items-center h-full">
-            <div className="container w-full mx-auto sm:mt-0 mt-36">
+            <div className="container w-full mx-auto sm:mt-0 mt-36">  
               <div className="flex gap-6">
                 <div
                   data-aos="zoom-in"
@@ -80,7 +80,7 @@ const Banner: React.FC = () => {
           </div>
         </div>
         <div
-          className='bg-[url("/img/banner-mob.jpg")] w-full h-screen  block md:hidden bg-center bg-cover'
+          className='bg-[url(2/img/banner-mob.jpg)] w-full h-screen  block md:hidden bg-center bg-cover'
           id="banner"
         >
           <div className="flex justify-between items-center h-full">
@@ -158,3 +158,5 @@ const Banner: React.FC = () => {
 };
 
 export default Banner;
+
+
