@@ -24,7 +24,7 @@ const Layout = ({
     <main className="min-h-screen">{children}</main>
       <div className="fixed">
       <WhatsAppWidget
-          phoneNumber="+923266288466"
+          phoneNumber="+923278013011"
           message="Hey! 👋🏼 How can I help you?"
           companyName="Syed Kashan Shah"
           replyTimeText="Frontend Developer"
