@@ -10,7 +10,7 @@ import Contact from "~/components/Contact";
 
 const Home: NextPage = () => {
   return (
-    <Layout title="Home page">
+    <Layout title="Kashan Shah | Frontend Web Developer">
       <Banner />
       <Services />
       <About />
