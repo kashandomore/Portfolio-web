@@ -7,7 +7,7 @@ const Banner: React.FC = () => {
     <>
       <section id="banner">
         <div
-          className='bg-[url(/img/banner.jpg)] w-full h-screen  md:block hidden lg:bg-center bg-right bg-cover'
+          className='bg-[url(/img/Banner.jpg)] w-full h-screen  md:block hidden lg:bg-center bg-right bg-cover'
           id="banner"
         >
           <div className="flex justify-between items-center h-full">
@@ -80,7 +80,7 @@ const Banner: React.FC = () => {
           </div>
         </div>
         <div
-          className='bg-[url(2/img/banner-mob.jpg)] w-full h-screen  block md:hidden bg-center bg-cover'
+          className='bg-[url(/img/Banner-mob.jpg)] w-full h-screen  block md:hidden bg-center bg-cover'
           id="banner"
         >
           <div className="flex justify-between items-center h-full">
