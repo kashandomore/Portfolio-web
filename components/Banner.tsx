@@ -80,7 +80,7 @@ const Banner: React.FC = () => {
           </div>
         </div>
         <div
-          className='bg-[url(/img/Banner-mob.jpg)] w-full h-screen  block md:hidden bg-center bg-cover'
+          className='bg-[url(/img/Banner-mob.jpg)] w-full h-screen bg-fixed block md:hidden bg-center bg-cover'
           id="banner"
         >
           <div className="flex justify-between items-center h-full">
