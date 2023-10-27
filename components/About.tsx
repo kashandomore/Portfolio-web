@@ -30,14 +30,14 @@ const About: React.FC = () => {
                 both Android and IOS platforms and those applications correspond
                 to the platform (Android or IOS) accordingly.
               </p>
-              <div className="flex flex-wrap gap-14 mt-6">
-                <div className="mt-2 font-bold">
+              <div className="grid sm:grid-cols-2 gap-14 mt-12 items-center h-full">
+                <div className="font-bold">
                   <p className="text-secondory">Name:</p>
                   <p className="text-white">Kashan shah</p>
                   <p className="text-secondory mt-4">Phone:</p>
                   <p className="text-white">+923266288466</p>
                 </div>
-                <div className="sm:mt-2 -mt-10 font-bold">
+                <div className="font-bold">
                   <p className="text-secondory">Email:</p>
                   <p className="text-white">Kashandomore@gmail.com</p>
                   <p className="text-secondory mt-4">Residence:</p>

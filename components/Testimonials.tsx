@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Testimonials: React.FC = () => {
   const settings = {
     dots: true,
-    fade: true,
+    fade: false,
     arrows: false,
     infinite: true,
     speed: 500,
@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
       </div>
       <div className="container mx-auto mt-20">
         <Slider {...settings}>
-          <div className="h-full">
+          <div className="h-full testimoni--wrapper">
             <div className="flex flex-col items-center justify-center">
               <div className="bg-secondory flex justify-center items-center w-14 h-16 bg-cut">
                 <img src="/img/quote.svg" className="-mt-2" alt="" />

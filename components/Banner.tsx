@@ -7,7 +7,7 @@ const Banner: React.FC = () => {
     <>
       <section id="banner">
         <div
-          className='bg-[url(/img/Banner.jpg)] w-full h-screen  md:block hidden lg:bg-center bg-right bg-cover'
+          className='bg-[url(/img/Banner.jpg)] w-full h-screen bg-fixed  md:block hidden lg:bg-center bg-right bg-cover'
           id="banner"
         >
           <div className="flex justify-between items-center h-full">
